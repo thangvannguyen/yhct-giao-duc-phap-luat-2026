@@ -7,10 +7,14 @@ import PracticePage from './pages/PracticePage'
 import ExamPage from './pages/ExamPage'
 import PrintPage from './pages/PrintPage'
 
+// Khi deploy lên GitHub Pages, site nằm trong thư mục con nên router phải biết
+// tiền tố đó. BASE_URL của Vite là '/' khi dev và '/yhct-.../' khi build.
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '')
+
 export default function App() {
   return (
     <ProgressProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <Routes>
           <Route element={<AppShell />}>
             <Route index element={<Navigate to="/danh-sach" replace />} />
