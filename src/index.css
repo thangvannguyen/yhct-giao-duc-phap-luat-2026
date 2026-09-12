@@ -1,0 +1,171 @@
+@import 'tailwindcss';
+
+/* Dark mode điều khiển bằng class .dark trên <html> (xem src/hooks/useTheme.js) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Be Vietnam Pro', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+:root {
+  --page: #f4f4f8;
+  --ink: #17161d;
+  /* Chiều cao thanh nav dưới đáy (mobile). Thanh điều hướng của trang Thi thử
+     ghim ngay phía trên nó nên hai chỗ phải dùng chung một con số. */
+  --bottom-nav-h: 72px;
+  color-scheme: light;
+}
+
+.dark {
+  --page: #08080d;
+  --ink: #f4f4f6;
+  color-scheme: dark;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 15px;
+  background-color: var(--page);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: color-mix(in oklab, #6366f1 32%, transparent);
+}
+
+/* Nền trang trí mờ phía sau nội dung */
+.aurora::before {
+  content: '';
+  position: fixed;
+  inset: -20% -10% auto -10%;
+  height: 55vh;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(45% 55% at 20% 0%, color-mix(in oklab, #6366f1 22%, transparent), transparent 70%),
+    radial-gradient(40% 50% at 80% 10%, color-mix(in oklab, #d946ef 16%, transparent), transparent 70%);
+}
+
+.dark .aurora::before {
+  background:
+    radial-gradient(45% 55% at 20% 0%, color-mix(in oklab, #6366f1 26%, transparent), transparent 70%),
+    radial-gradient(40% 50% at 80% 10%, color-mix(in oklab, #a21caf 22%, transparent), transparent 70%);
+}
+
+/* Đổ bóng dạng thẻ, dịu hơn shadow mặc định */
+.shadow-card {
+  box-shadow:
+    0 1px 2px rgb(17 16 30 / 0.04),
+    0 10px 30px -14px rgb(17 16 30 / 0.16);
+}
+
+.dark .shadow-card {
+  box-shadow:
+    0 1px 2px rgb(0 0 0 / 0.5),
+    0 12px 32px -16px rgb(0 0 0 / 0.8);
+}
+
+/* ----- Chuyển động ----- */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-rise {
+  animation: rise-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-pop {
+  animation: pop-in 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-rise,
+  .animate-pop {
+    animation-duration: 0.01ms;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+/* ----- Chế độ in: chỉ giữ lại tờ tài liệu, bỏ hết khung app ----- */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .aurora::before {
+    display: none !important;
+  }
+
+  .app-content {
+    padding-left: 0 !important;
+  }
+
+  .app-main {
+    max-width: none !important;
+    gap: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Tờ tài liệu in ra dạng giấy trắng mực đen, bỏ viền và bóng đổ */
+  .print-sheet {
+    border: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+    box-shadow: none !important;
+    font-family: 'Times New Roman', Times, Georgia, serif;
+    font-size: 12.5pt;
+  }
+
+  .print-sheet * {
+    color: #000 !important;
+    background: transparent !important;
+  }
+
+  /* Không cắt một câu hỏi ra làm hai trang */
+  .print-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  @page {
+    margin: 15mm;
+  }
+}
