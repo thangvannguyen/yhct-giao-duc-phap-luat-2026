@@ -2,24 +2,10 @@ import { NavLink, Outlet } from 'react-router-dom'
 import { QUESTIONS } from '../data/questions'
 import { useProgressStore } from '../context/ProgressContext'
 import { useTheme } from '../hooks/useTheme'
+import { usePageTracking } from '../hooks/usePageTracking'
 import ProgressRing from '../components/ProgressRing'
-import {
-  IconCards,
-  IconList,
-  IconMoon,
-  IconPrinter,
-  IconQuiz,
-  IconSun,
-  IconTimer,
-} from '../components/icons'
-
-export const NAV_ITEMS = [
-  { to: '/danh-sach', label: 'Danh sách', hint: 'Xem câu hỏi & đáp án', Icon: IconList },
-  { to: '/flashcard', label: 'Flashcard', hint: 'Học từng thẻ một', Icon: IconCards },
-  { to: '/trac-nghiem', label: 'Trắc nghiệm', hint: 'Làm cả đề 58 câu', Icon: IconQuiz },
-  { to: '/thi-thu', label: 'Thi thử', hint: 'Kiểm tra có tính giờ', Icon: IconTimer },
-  { to: '/tai-lieu', label: 'Tài liệu in', hint: 'Xuất PDF để in ra học', Icon: IconPrinter },
-]
+import { NAV_ITEMS } from '../data/nav'
+import { IconMoon, IconSun } from '../components/icons'
 
 function BrandMark({ className = 'h-10 w-10 text-lg' }) {
   return (
@@ -45,6 +31,7 @@ function ThemeToggle({ theme, onToggle, className = '' }) {
 }
 
 export default function AppShell() {
+  usePageTracking()
   const { theme, toggleTheme } = useTheme()
   const { learned } = useProgressStore()
   const learnedCount = QUESTIONS.filter((q) => learned[q.id]).length
@@ -62,7 +49,7 @@ export default function AppShell() {
         </div>
 
         <nav className="mt-7 flex flex-1 flex-col gap-1">
-          {NAV_ITEMS.map(({ to, label, hint, Icon }) => (
+          {NAV_ITEMS.map(({ to, short, hint, Icon }) => (
             <NavLink
               key={to}
               to={to}
@@ -78,7 +65,7 @@ export default function AppShell() {
                 <>
                   <Icon className="h-[18px] w-[18px] shrink-0" />
                   <span className="min-w-0 flex-1">
-                    <span className="block text-sm font-medium">{label}</span>
+                    <span className="block text-sm font-medium">{short}</span>
                     <span
                       className={`block truncate text-[11px] ${
                         isActive ? 'text-white/70' : 'text-stone-400 dark:text-stone-500'
@@ -129,7 +116,7 @@ export default function AppShell() {
         className="no-print fixed inset-x-0 bottom-0 z-30 grid grid-cols-5 border-t border-stone-200/80 bg-white/90 pb-[env(safe-area-inset-bottom)] backdrop-blur-xl lg:hidden dark:border-white/[0.06] dark:bg-[#0c0c14]/90"
         style={{ height: 'calc(var(--bottom-nav-h) + env(safe-area-inset-bottom))' }}
       >
-        {NAV_ITEMS.map(({ to, label, Icon }) => (
+        {NAV_ITEMS.map(({ to, short, Icon }) => (
           <NavLink
             key={to}
             to={to}
@@ -148,7 +135,7 @@ export default function AppShell() {
                 >
                   <Icon className="h-[18px] w-[18px]" />
                 </span>
-                {label}
+                {short}
               </>
             )}
           </NavLink>
