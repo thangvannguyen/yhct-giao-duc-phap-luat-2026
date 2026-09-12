@@ -5,6 +5,7 @@ import { useDocumentTitle } from '../hooks/useDocumentTitle'
 import TopicFilter from '../components/TopicFilter'
 import StatsPanel from '../components/StatsPanel'
 import TopicBadge from '../components/TopicBadge'
+import ExplainBox from '../components/ExplainBox'
 import { Button, Card, EmptyState, NumberBadge, PageHeader } from '../components/ui'
 import { IconCheck, IconSearch } from '../components/icons'
 
@@ -119,6 +120,7 @@ export default function ListPage() {
                     {q.note && (
                       <p className="mt-2 text-xs text-emerald-700/80 dark:text-emerald-300/70">{q.note}</p>
                     )}
+                    <ExplainBox text={q.explain} className="mt-3" />
                   </div>
                 )}
               </Card>

@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { QUESTIONS } from '../data/questions'
 import { TOPICS, TOPIC_BY_ID } from '../data/topics'
 import { useDocumentTitle } from '../hooks/useDocumentTitle'
+import { useProgressStore } from '../context/ProgressContext'
 import { prepareQuestions } from '../utils/quiz'
 import { DOC_MODES, correctLetter, docTitle, todayVi } from '../utils/printDoc'
 import { Button, Card, PageHeader } from '../components/ui'
@@ -29,6 +30,7 @@ function ModeCard({ active, onClick, label, hint }) {
 
 export default function PrintPage() {
   useDocumentTitle('Tài liệu in')
+  const { showExplain } = useProgressStore()
   const [mode, setMode] = useState('full')
   const [topic, setTopic] = useState('all')
   const [seed, setSeed] = useState(0)
@@ -114,6 +116,13 @@ export default function PrintPage() {
           <p className="text-xs text-stone-400">
             Mẹo: bấm <strong>In / Lưu PDF</strong> rồi chọn "Save as PDF" trong hộp thoại in của trình duyệt
             để lưu thành file PDF. Phần điều khiển này sẽ không nằm trong bản in.
+            {mode !== 'blank' && (
+              <>
+                {' '}
+                Phần <strong>Vì sao</strong> hiện {showExplain ? 'CÓ' : 'KHÔNG'} in kèm — bật/tắt bằng nút
+                bóng đèn ở đầu trang.
+              </>
+            )}
           </p>
         </Card>
       </div>
@@ -154,6 +163,12 @@ export default function PrintPage() {
 
               {mode !== 'blank' && q.note && (
                 <p className="mt-0.5 pl-5 text-xs text-stone-500 italic">{q.note}</p>
+              )}
+              {mode !== 'blank' && showExplain && q.explain && (
+                <p className="mt-1 pl-5 text-[12.5px] leading-relaxed text-stone-600">
+                  <span className="font-semibold">Vì sao: </span>
+                  {q.explain}
+                </p>
               )}
             </li>
           ))}

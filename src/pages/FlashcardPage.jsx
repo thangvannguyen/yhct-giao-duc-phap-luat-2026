@@ -5,6 +5,7 @@ import { useDocumentTitle } from '../hooks/useDocumentTitle'
 import { prepareQuestions } from '../utils/quiz'
 import TopicFilter from '../components/TopicFilter'
 import OptionList from '../components/OptionList'
+import ExplainBox from '../components/ExplainBox'
 import TopicBadge from '../components/TopicBadge'
 import { Badge, Button, Card, EmptyState, NumberBadge, PageHeader, ProgressBar } from '../components/ui'
 import {
@@ -130,6 +131,7 @@ export default function FlashcardPage() {
                   {card.note && (
                     <p className="mt-1 text-xs text-stone-500 dark:text-stone-400">{card.note}</p>
                   )}
+                  <ExplainBox text={card.explain} className="mt-2.5" />
                 </div>
               ) : (
                 <button

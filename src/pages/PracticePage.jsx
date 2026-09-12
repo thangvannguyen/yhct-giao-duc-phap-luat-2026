@@ -4,6 +4,7 @@ import { useDocumentTitle } from '../hooks/useDocumentTitle'
 import { prepareQuestions } from '../utils/quiz'
 import TopicFilter from '../components/TopicFilter'
 import OptionList from '../components/OptionList'
+import ExplainBox from '../components/ExplainBox'
 import TopicBadge from '../components/TopicBadge'
 import { Badge, Button, Card, EmptyState, PageHeader } from '../components/ui'
 import { IconEye, IconRotate, IconSend } from '../components/icons'
@@ -153,6 +154,7 @@ export default function PracticePage() {
                   {showResult && q.note && (
                     <p className="mt-2.5 text-xs text-stone-500 dark:text-stone-400">{q.note}</p>
                   )}
+                  {showResult && <ExplainBox text={q.explain} className="mt-2.5" />}
                 </Card>
               )
             })}

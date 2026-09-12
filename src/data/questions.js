@@ -17,6 +17,8 @@ export const QUESTIONS = [
       'Quyền của Quốc hội trong việc ban hành luật.',
       'Quyền sở hữu tài sản công của nhà nước.',
     ],
+    explain:
+      'Chủ quyền quốc gia có hai mặt: đối nội là quyền lực tối cao với toàn bộ lãnh thổ và dân cư, đối ngoại là quyền độc lập tự quyết, không chịu áp đặt từ quốc gia khác. Các phương án còn lại chỉ là quyền của một cơ quan hoặc một nhóm chủ thể cụ thể, không phải thuộc tính của cả quốc gia.',
   },
   {
     id: 2,
@@ -29,6 +31,8 @@ export const QUESTIONS = [
       'Luật và Pháp lệnh.',
       'Thông tư và Chỉ thị.',
     ],
+    explain:
+      'Mỗi cơ quan có hình thức văn bản riêng: Quốc hội ban hành luật và nghị quyết, Chính phủ ban hành nghị định, Thủ tướng ban hành quyết định, bộ trưởng ban hành thông tư. Riêng Chủ tịch nước ban hành lệnh và quyết định, ví dụ lệnh công bố luật hay quyết định đặc xá.',
   },
   {
     id: 3,
@@ -41,6 +45,8 @@ export const QUESTIONS = [
       'Nghị quyết của Đảng và điều lệ của các tổ chức xã hội.',
       'Học thuyết pháp lý và các án lệ quốc tế.',
     ],
+    explain:
+      'Nhà nước không tạo ra pháp luật từ số không mà bằng ba cách: thừa nhận tập quán sẵn có (tập quán pháp), thừa nhận cách giải quyết của cơ quan xét xử làm khuôn mẫu (tiền lệ pháp), và trực tiếp soạn thảo ban hành (văn bản quy phạm pháp luật). Đạo đức hay tôn giáo không tự thành pháp luật nếu nhà nước không thừa nhận.',
   },
   {
     id: 4,
@@ -54,6 +60,8 @@ export const QUESTIONS = [
       'Pháp luật thể hiện ý chí của giai cấp thống trị.',
     ],
     note: 'Câu chọn nhận định SAI. Nguyên văn tài liệu đáp án: “Pháp luật chỉ do nhân dân ban hành (→ sai, do Nhà nước ban hành).”',
+    explain:
+      'Sai ở chữ "chỉ do nhân dân". Pháp luật do Nhà nước ban hành hoặc thừa nhận rồi bảo đảm thực hiện bằng quyền lực nhà nước. Nhân dân tham gia qua việc bầu ra Quốc hội và góp ý xây dựng luật, nhưng chủ thể ban hành là cơ quan nhà nước có thẩm quyền. Ba phương án còn lại đều là đặc điểm đúng của pháp luật.',
   },
   {
     id: 5,
@@ -66,6 +74,8 @@ export const QUESTIONS = [
       'Nhân thân và hoàn cảnh phạm tội.',
       'Hậu quả thiệt hại thực tế xảy ra.',
     ],
+    explain:
+      'Lỗi là thái độ tâm lý của người vi phạm đối với hành vi và hậu quả, chỉ có hai hình thức: cố ý (nhận thức được hậu quả mà vẫn làm) và vô ý (không thấy trước, hoặc thấy trước nhưng cho rằng ngăn được). Động cơ, mục đích, nhân thân cũng nằm trong cấu thành vi phạm nhưng thuộc yếu tố khác, không phải bản thân lỗi.',
   },
   {
     id: 6,
@@ -79,6 +89,8 @@ export const QUESTIONS = [
       'Pháp luật chỉ tồn tại trong xã hội có Nhà nước.',
     ],
     note: 'Câu chọn nhận định SAI — đáp án đúng là phương án đầu tiên.',
+    explain:
+      'Sai về trình tự lịch sử. Pháp luật do Nhà nước ban hành hoặc thừa nhận, nên phải có Nhà nước mới có pháp luật. Hai hiện tượng này cùng ra đời khi xã hội phân chia giai cấp, pháp luật không thể có trước.',
   },
   {
     id: 7,
@@ -91,6 +103,8 @@ export const QUESTIONS = [
       'Bằng các nghị quyết của Mặt trận Tổ quốc.',
       'Bằng chính sách kinh tế và ngoại giao.',
     ],
+    explain:
+      'Đây là nguyên tắc của nhà nước pháp quyền: mọi hoạt động quản lý phải dựa trên Hiến pháp và pháp luật, và chính cơ quan nhà nước cũng phải tuân theo. Đạo đức, phong tục vẫn có vai trò nhưng không phải công cụ quản lý chính thức của nhà nước.',
   },
   {
     id: 8,
@@ -103,6 +117,8 @@ export const QUESTIONS = [
       'Phạt tiền, cảnh cáo, tịch thu, trục xuất.',
       'Bồi thường, khôi phục, cải tạo, giám sát.',
     ],
+    explain:
+      'Chế tài được phân loại theo ngành luật điều chỉnh, tương ứng bốn loại trách nhiệm pháp lý: hình sự, hành chính, dân sự và kỷ luật. Các phương án khác liệt kê hình thức xử phạt cụ thể (phạt tiền, cảnh cáo) hoặc phương pháp tác động (thuyết phục, giáo dục), không phải cách phân loại chế tài.',
   },
   {
     id: 9,
@@ -115,6 +131,8 @@ export const QUESTIONS = [
       'Quốc hội làm chủ.',
       'Nhà nước làm chủ.',
     ],
+    explain:
+      'Bản chất nhà nước của Nhân dân, do Nhân dân, vì Nhân dân: tất cả quyền lực nhà nước thuộc về Nhân dân. Đảng giữ vai trò lãnh đạo, Quốc hội là cơ quan đại biểu cao nhất do dân bầu, nhưng chủ thể làm chủ đất nước là Nhân dân.',
   },
   {
     id: 10,
@@ -127,6 +145,8 @@ export const QUESTIONS = [
       'Xét xử các vụ án và quyết định hình phạt.',
       'Quản lý ngân sách nhà nước và điều hành Chính phủ.',
     ],
+    explain:
+      'Chủ tịch nước là nguyên thủ quốc gia, thay mặt Nhà nước về đối nội và đối ngoại, nên các quyền nêu trên đều mang tính nguyên thủ. Ban hành luật là của Quốc hội, xét xử là của Tòa án, điều hành ngân sách là của Chính phủ.',
   },
   {
     id: 11,
@@ -139,6 +159,8 @@ export const QUESTIONS = [
       'Là Nhà nước quân chủ lập hiến do Đảng lãnh đạo.',
       'Là Nhà nước tư bản chủ nghĩa đang trong giai đoạn quá độ.',
     ],
+    explain:
+      'Đây là định danh chính thức trong Hiến pháp 2013. Pháp quyền nghĩa là nhà nước tổ chức và hoạt động trên cơ sở Hiến pháp, pháp luật; của dân, do dân, vì dân chỉ nguồn gốc và mục đích của quyền lực. Việt Nam là nhà nước đơn nhất, không phải liên bang.',
   },
   {
     id: 12,
@@ -151,6 +173,8 @@ export const QUESTIONS = [
       'Để phát triển kinh tế thị trường.',
       'Để bảo vệ chủ quyền quốc gia.',
     ],
+    explain:
+      'Chức năng gốc của quy phạm pháp luật là điều chỉnh hành vi trong các quan hệ xã hội, tức đặt ra khuôn mẫu xử sự: được làm gì, phải làm gì, cấm làm gì. Giáo dục đạo đức hay phát triển kinh tế là hệ quả kéo theo, không phải mục đích trực tiếp.',
   },
   {
     id: 13,
@@ -163,6 +187,8 @@ export const QUESTIONS = [
       'Chủ tịch Quốc hội.',
       'Chánh án Tòa án nhân dân tối cao.',
     ],
+    explain:
+      'Khen thưởng cấp nhà nước gồm huân chương, huy chương, danh hiệu vinh dự nhà nước thuộc thẩm quyền của nguyên thủ quốc gia là Chủ tịch nước. Thủ tướng chỉ tặng bằng khen và cờ thi đua của Chính phủ.',
   },
   {
     id: 14,
@@ -175,6 +201,8 @@ export const QUESTIONS = [
       'Bốn khía cạnh: chính thể, cấu trúc, chế độ chính trị và tư pháp.',
       'Ba khía cạnh: kinh tế, chính trị và văn hóa.',
     ],
+    explain:
+      'Ba khía cạnh trả lời ba câu hỏi khác nhau: chính thể là quyền lực tối cao được lập ra thế nào (quân chủ hay cộng hòa), cấu trúc là nhà nước chia thành đơn vị lãnh thổ ra sao (đơn nhất hay liên bang), chế độ chính trị là dùng phương pháp gì để thực hiện quyền lực (dân chủ hay phản dân chủ).',
   },
   {
     id: 15,
@@ -187,6 +215,8 @@ export const QUESTIONS = [
       'Quyền sử dụng, quyền định đoạt, quyền thế chấp.',
       'Quyền chiếm hữu, quyền sử dụng, quyền chuyển nhượng.',
     ],
+    explain:
+      'Ba quyền năng ứng với ba mức tác động lên tài sản: nắm giữ và quản lý (chiếm hữu), khai thác công dụng và hưởng hoa lợi (sử dụng), quyết định số phận pháp lý như bán, tặng, tiêu huỷ (định đoạt). Thế chấp hay chuyển nhượng chỉ là cách thực hiện quyền định đoạt, không phải quyền năng riêng.',
   },
   {
     id: 16,
@@ -199,6 +229,8 @@ export const QUESTIONS = [
       'Là việc khai thác công dụng, hưởng hoa lợi từ tài sản.',
       'Là việc định đoạt số phận pháp lý của tài sản.',
     ],
+    explain:
+      'Chiếm hữu là quan hệ thực tế giữa người và tài sản, tức đang nắm giữ, quản lý nó. Cần phân biệt với sử dụng (khai thác công dụng) và định đoạt (quyết định số phận tài sản). Lưu ý người chiếm hữu chưa chắc là chủ sở hữu, ví dụ người thuê hay người mượn.',
   },
   {
     id: 17,
@@ -211,6 +243,8 @@ export const QUESTIONS = [
       'Sự phát triển của lực lượng sản xuất.',
       'Nhu cầu quản lý dân số và lãnh thổ.',
     ],
+    explain:
+      'Khi tư hữu xuất hiện, xã hội phân hoá thành các giai cấp có lợi ích đối kháng đến mức không tự điều hoà được, cần một bộ máy cưỡng chế đứng ra duy trì trật tự, đó là nhà nước. Trị thuỷ hay chống ngoại xâm chỉ là điều kiện thúc đẩy, không phải nguyên nhân cốt lõi.',
   },
   {
     id: 18,
@@ -223,6 +257,8 @@ export const QUESTIONS = [
       'Đẩy mạnh cải cách hành chính và tư pháp.',
       'Mở rộng quyền lập pháp cho các địa phương.',
     ],
+    explain:
+      'Muốn áp dụng thống nhất thì bản thân hệ thống pháp luật phải thống nhất trước: văn bản cấp dưới không trái cấp trên, các ngành luật không mâu thuẫn nhau. Tuyên truyền hay cải cách hành chính chỉ hỗ trợ; giao quyền lập pháp cho địa phương lại càng phá vỡ tính thống nhất.',
   },
   {
     id: 19,
@@ -235,6 +271,8 @@ export const QUESTIONS = [
       'Khuyến khích – do các tổ chức xã hội ban hành – thể hiện đạo đức chung – phụ thuộc trình độ dân trí.',
       'Bắt buộc chung – do Tòa án ban hành – thể hiện ý chí của thẩm phán – phụ thuộc vào án lệ.',
     ],
+    explain:
+      'Bốn chỗ trống ứng với bốn dấu hiệu của pháp luật: tính bắt buộc chung (áp dụng cho mọi người), chủ thể ban hành (Nhà nước), nội dung ý chí (giai cấp thống trị), và cơ sở quyết định nội dung đó (điều kiện kinh tế xã hội, vì pháp luật thuộc kiến trúc thượng tầng).',
   },
   {
     id: 20,
@@ -247,6 +285,8 @@ export const QUESTIONS = [
       'Năm kiểu: cộng sản nguyên thủy, chiếm hữu nô lệ, phong kiến, tư sản, xã hội chủ nghĩa.',
       'Bốn kiểu: quân chủ, cộng hòa, liên bang, đơn nhất.',
     ],
+    explain:
+      'Kiểu nhà nước gắn với hình thái kinh tế xã hội có giai cấp. Xã hội cộng sản nguyên thuỷ chưa có giai cấp nên chưa có nhà nước, đó là lý do không tính thành kiểu thứ năm. Quân chủ hay cộng hòa, đơn nhất hay liên bang là hình thức nhà nước, không phải kiểu nhà nước.',
   },
   {
     id: 21,
@@ -259,6 +299,8 @@ export const QUESTIONS = [
       'Là điều ước quốc tế mà Việt Nam tham gia.',
       'Là văn bản chỉ có giá trị tham khảo, không bắt buộc thi hành.',
     ],
+    explain:
+      'Hiến pháp quy định những vấn đề gốc như chế độ chính trị, quyền con người, tổ chức bộ máy nhà nước nên gọi là đạo luật cơ bản. Mọi văn bản khác phải phù hợp với Hiến pháp, trái thì bị bãi bỏ, đó là ý nghĩa của hiệu lực pháp lý cao nhất.',
   },
   {
     id: 22,
@@ -271,6 +313,8 @@ export const QUESTIONS = [
       'Cho phép mỗi ngành ban hành quy định riêng không cần thống nhất.',
       'Chỉ cần công bố pháp luật rộng rãi trên phương tiện truyền thông.',
     ],
+    explain:
+      'Câu này nhấn cả hai khâu: xây dựng (văn bản không chồng chéo, mâu thuẫn) và áp dụng (cùng một vụ việc thì xử lý như nhau ở mọi nơi). Công khai, minh bạch để người dân biết mà tuân theo và giám sát được.',
   },
   {
     id: 23,
@@ -283,6 +327,8 @@ export const QUESTIONS = [
       'Quốc hội, Chính phủ và Tòa án nhân dân tối cao.',
       'Đảng Cộng sản Việt Nam, Quốc hội và Chính phủ.',
     ],
+    explain:
+      'Hệ thống chính trị rộng hơn bộ máy nhà nước: Đảng lãnh đạo, Nhà nước quản lý, Mặt trận Tổ quốc và các đoàn thể tập hợp nhân dân. Các phương án chỉ liệt kê cơ quan nhà nước là nhầm hệ thống chính trị với bộ máy nhà nước.',
   },
   {
     id: 24,
@@ -295,6 +341,8 @@ export const QUESTIONS = [
       'Đoàn Thanh niên Cộng sản Hồ Chí Minh.',
       'Hội Liên hiệp Phụ nữ Việt Nam.',
     ],
+    explain:
+      'Mặt trận Tổ quốc là liên minh chính trị, liên hiệp tự nguyện, nơi tập hợp mọi giai cấp, dân tộc, tôn giáo. Công đoàn, Đoàn Thanh niên, Hội Phụ nữ là thành viên của Mặt trận và chỉ đại diện cho một nhóm đối tượng.',
   },
   {
     id: 25,
@@ -307,6 +355,8 @@ export const QUESTIONS = [
       'Văn phòng Quốc hội.',
       'Ủy ban Pháp luật của Quốc hội.',
     ],
+    explain:
+      'Quốc hội mỗi năm chỉ họp hai kỳ nên cần một cơ quan hoạt động thường xuyên giữa hai kỳ họp, đó là Ủy ban Thường vụ Quốc hội, cơ quan ban hành pháp lệnh và giám sát. Hội đồng Dân tộc và các ủy ban là cơ quan chuyên môn; Văn phòng Quốc hội chỉ là bộ máy giúp việc hành chính.',
   },
   {
     id: 26,
@@ -319,6 +369,8 @@ export const QUESTIONS = [
       'Toàn bộ đại biểu Quốc hội biểu quyết nhất trí.',
       '2/3 số đại biểu có mặt tại kỳ họp tán thành.',
     ],
+    explain:
+      'Hiến pháp là đạo luật cơ bản nên thủ tục sửa phải chặt hơn luật thường (luật thường chỉ cần quá nửa tán thành). Lưu ý là 2/3 trên tổng số đại biểu Quốc hội, không phải 2/3 số đại biểu có mặt tại kỳ họp.',
   },
   {
     id: 27,
@@ -331,6 +383,8 @@ export const QUESTIONS = [
       'Đất liền, hải đảo và thềm lục địa.',
       'Đất liền, vùng trời và các khu vực biên giới.',
     ],
+    explain:
+      'Lãnh thổ quốc gia là một khối thống nhất gồm vùng đất (đất liền và các đảo, quần đảo), vùng biển và vùng trời phía trên. Với vùng đặc quyền kinh tế và thềm lục địa, quốc gia có quyền chủ quyền và quyền tài phán chứ không phải lãnh thổ.',
   },
   {
     id: 28,
@@ -343,6 +397,8 @@ export const QUESTIONS = [
       'Quyền thế chấp và quyền cầm cố.',
       'Quyền sử dụng hạn chế bất động sản liền kề và quyền thừa kế.',
     ],
+    explain:
+      'Hưởng dụng là quyền khai thác công dụng và hưởng hoa lợi trên tài sản của người khác; bề mặt là quyền sử dụng mặt đất, mặt nước, khoảng không của người khác. Cả hai đều là quyền trên tài sản thuộc sở hữu của người khác nên xếp vào nhóm quyền khác, phân biệt với quyền sở hữu.',
   },
   {
     id: 29,
@@ -355,6 +411,8 @@ export const QUESTIONS = [
       'Là quyết định đơn phương của người sử dụng lao động về lương thưởng.',
       'Là văn bản do cơ quan nhà nước ban hành quy định mức lương tối thiểu.',
     ],
+    explain:
+      'Mấu chốt nằm ở hai chữ tập thể và thỏa thuận: một bên là tập thể người lao động thông qua tổ chức đại diện, thương lượng với người sử dụng lao động rồi ký kết. Khác hợp đồng lao động (ký với từng cá nhân) và khác nội quy lao động (do người sử dụng lao động đơn phương ban hành).',
   },
   {
     id: 30,
@@ -367,6 +425,8 @@ export const QUESTIONS = [
       'Năng lực pháp luật và năng lực tài chính.',
       'Năng lực chuyên môn và năng lực pháp luật.',
     ],
+    explain:
+      'Hai thành tố bổ sung nhau: năng lực pháp luật là khả năng có quyền và nghĩa vụ, thường có từ khi sinh ra; năng lực hành vi là khả năng tự mình xác lập và thực hiện quyền, nghĩa vụ đó, phụ thuộc độ tuổi và khả năng nhận thức. Có đủ cả hai mới trở thành chủ thể của quan hệ pháp luật.',
   },
   {
     id: 31,
@@ -379,6 +439,8 @@ export const QUESTIONS = [
       'Bốn loại: tập quán pháp, tiền lệ pháp, văn bản quy phạm pháp luật và điều ước quốc tế.',
       'Ba loại: hiến pháp, luật và văn bản dưới luật.',
     ],
+    explain:
+      'Ba hình thức tương ứng ba con đường hình thành pháp luật. Cách chia hiến pháp, luật, văn bản dưới luật là phân loại văn bản quy phạm pháp luật theo hiệu lực, nằm bên trong hình thức thứ ba chứ không song song với nó.',
   },
   {
     id: 32,
@@ -391,6 +453,8 @@ export const QUESTIONS = [
       'Bộ Công an.',
       'Thanh tra Chính phủ.',
     ],
+    explain:
+      'Viện kiểm sát giữ hai chức năng gắn liền nhau: thực hành quyền công tố (nhân danh Nhà nước truy tố người phạm tội) và kiểm sát hoạt động tư pháp (giám sát việc tuân theo pháp luật trong điều tra, xét xử, thi hành án). Tòa án xét xử, Công an điều tra, đều không phải cơ quan công tố.',
   },
   {
     id: 33,
@@ -403,6 +467,8 @@ export const QUESTIONS = [
       'Chức năng bảo vệ các quan hệ xã hội.',
       'Chức năng giáo dục.',
     ],
+    explain:
+      'Pháp luật có ba chức năng: điều chỉnh, bảo vệ và giáo dục. Pháp luật tác động tới kinh tế bằng cách tạo hành lang pháp lý chứ không trực tiếp sản xuất kinh doanh, nên chức năng kinh tế trực tiếp không phải chức năng của pháp luật.',
   },
   {
     id: 34,
@@ -410,6 +476,8 @@ export const QUESTIONS = [
     topic: 'ly-luan-phap-luat',
     question: 'Văn bản nào có hiệu lực cao nhất trong Hệ thống Pháp luật Việt Nam?',
     options: ['Hiến pháp.', 'Bộ luật.', 'Luật.', 'Pháp lệnh.'],
+    explain:
+      'Hệ thống văn bản quy phạm pháp luật xếp theo thứ bậc hiệu lực: Hiến pháp đứng đầu, dưới là bộ luật và luật, rồi pháp lệnh, nghị định, thông tư. Văn bản cấp dưới trái Hiến pháp thì bị đình chỉ hoặc bãi bỏ.',
   },
   {
     id: 35,
@@ -422,6 +490,8 @@ export const QUESTIONS = [
       'Nhà nước ra đời do ý chí của một cá nhân kiệt xuất.',
       'Nhà nước ra đời trước khi xã hội phân chia giai cấp.',
     ],
+    explain:
+      'Nhà nước là hiện tượng lịch sử, không phải lúc nào loài người cũng có nhà nước. Thời cộng sản nguyên thuỷ chưa có tư hữu, chưa có giai cấp thì chưa có nhà nước; khi giai cấp đối kháng xuất hiện thì nhà nước ra đời.',
   },
   {
     id: 36,
@@ -435,6 +505,8 @@ export const QUESTIONS = [
       'Pháp luật có mối quan hệ chặt chẽ với kinh tế nhưng không chỉ điều chỉnh quan hệ kinh tế.',
     ],
     note: 'Câu chọn nhận định SAI — đáp án đúng là phương án đầu tiên.',
+    explain:
+      'Sai ở chữ chỉ. Pháp luật điều chỉnh hầu hết các lĩnh vực của đời sống: dân sự, hôn nhân gia đình, lao động, hành chính, hình sự. Quan hệ kinh tế chỉ là một nhóm trong số đó.',
   },
   {
     id: 37,
@@ -447,6 +519,8 @@ export const QUESTIONS = [
       'Chỉ dựa trên mệnh lệnh hành chính từ Nhà nước.',
       'Kết hợp giữa cưỡng chế và tự nguyện thi hành án.',
     ],
+    explain:
+      'Quan hệ lao động có hai mặt: hình thành trên cơ sở tự nguyện thỏa thuận (ký hợp đồng, thương lượng lương), nhưng khi đã làm việc thì người lao động chịu sự quản lý điều hành của người sử dụng lao động, đồng thời cả hai phải tuân thủ quy định bắt buộc của Nhà nước. Vì vậy ngành luật này dùng cả hai phương pháp.',
   },
   {
     id: 38,
@@ -459,6 +533,8 @@ export const QUESTIONS = [
       'Chỉ có thể yêu cầu cơ quan công an can thiệp.',
       'Thương lượng với bên vi phạm là phương thức duy nhất được pháp luật công nhận.',
     ],
+    explain:
+      'Pháp luật dân sự cho nhiều lựa chọn chứ không bắt buộc phải ra tòa: chủ thể có thể tự bảo vệ trong giới hạn luật cho phép, thương lượng hoà giải với nhau, hoặc yêu cầu Tòa án và cơ quan nhà nước có thẩm quyền giải quyết. Vì vậy các phương án dùng chữ chỉ có thể hay duy nhất đều sai.',
   },
   {
     id: 39,
@@ -471,6 +547,8 @@ export const QUESTIONS = [
       'Pháp luật tồn tại độc lập, không liên quan đến Nhà nước.',
       'Pháp luật chỉ có giá trị đạo đức, không có tính cưỡng chế.',
     ],
+    explain:
+      'Câu này nêu đủ hai vai trò của pháp luật: với Nhà nước, pháp luật là công cụ quản lý xã hội; với xã hội, pháp luật là chuẩn mực điều chỉnh hành vi. Các phương án còn lại thu hẹp pháp luật thành công cụ trấn áp hoặc tách pháp luật khỏi nhà nước, đều phiến diện.',
   },
   {
     id: 40,
@@ -478,6 +556,8 @@ export const QUESTIONS = [
     topic: 'hien-phap-2013',
     question: 'Theo Hiến pháp năm 2013, cơ quan nào có quyền quyết định trưng cầu ý dân?',
     options: ['Quốc hội.', 'Chủ tịch nước.', 'Chính phủ.', 'Ủy ban Thường vụ Quốc hội.'],
+    explain:
+      'Trưng cầu ý dân là hỏi ý kiến toàn dân về vấn đề đặc biệt quan trọng nên thẩm quyền quyết định thuộc Quốc hội, cơ quan quyền lực nhà nước cao nhất đại diện cho Nhân dân. Ủy ban Thường vụ Quốc hội, Chủ tịch nước hay Chính phủ có thể đề nghị nhưng không tự quyết định.',
   },
   {
     id: 41,
@@ -490,6 +570,8 @@ export const QUESTIONS = [
       'Chức năng bảo vệ trật tự pháp luật.',
       'Chức năng giáo dục ý thức pháp luật.',
     ],
+    explain:
+      'Ba chức năng của pháp luật là điều chỉnh, bảo vệ và giáo dục. Sáng tạo nghệ thuật thuộc lĩnh vực văn hoá; pháp luật chỉ bảo hộ quyền tác giả chứ bản thân không sáng tạo nghệ thuật.',
   },
   {
     id: 42,
@@ -502,6 +584,8 @@ export const QUESTIONS = [
       'Lỗi, động cơ, mục đích và hậu quả.',
       'Chủ thể, đối tượng, nguyên nhân và điều kiện.',
     ],
+    explain:
+      'Bốn yếu tố trả lời bốn câu hỏi: ai vi phạm (chủ thể), xâm hại quan hệ xã hội nào (khách thể), biểu hiện bên ngoài gồm hành vi và hậu quả (mặt khách quan), diễn biến tâm lý bên trong gồm lỗi, động cơ, mục đích (mặt chủ quan). Thiếu một yếu tố thì chưa cấu thành vi phạm pháp luật.',
   },
   {
     id: 43,
@@ -514,6 +598,8 @@ export const QUESTIONS = [
       'Là tổ chức kinh tế điều tiết sản xuất và phân phối của cải.',
       'Là liên minh các giai cấp không phân biệt lợi ích.',
     ],
+    explain:
+      'Chữ đặc biệt là mấu chốt phân biệt nhà nước với mọi tổ chức khác: chỉ nhà nước có quyền lực công, có bộ máy cưỡng chế chuyên nghiệp như quân đội, công an, tòa án, có quyền ban hành pháp luật và thu thuế. Các tổ chức xã hội khác không có những dấu hiệu này.',
   },
   {
     id: 44,
@@ -526,6 +612,8 @@ export const QUESTIONS = [
       'Thể hiện ở việc áp dụng như nhau cho mọi quốc gia.',
       'Thể hiện ở tính khách quan, trung lập tuyệt đối.',
     ],
+    explain:
+      'Pháp luật do nhà nước ban hành, mà nhà nước nằm trong tay giai cấp thống trị, nên nội dung pháp luật trước hết phản ánh ý chí và bảo vệ lợi ích của giai cấp đó. Bên cạnh tính giai cấp, pháp luật còn có tính xã hội là duy trì trật tự chung, hai tính chất tồn tại song song.',
   },
   {
     id: 45,
@@ -539,6 +627,8 @@ export const QUESTIONS = [
       'Pháp luật do Nhà nước ban hành, đạo đức hình thành từ dư luận xã hội.',
     ],
     note: 'Câu chọn nhận định SAI — đáp án đúng là phương án đầu tiên.',
+    explain:
+      'Hai hiện tượng này gần nhau nhưng khác bản chất: pháp luật do Nhà nước ban hành, bắt buộc chung, vi phạm thì bị cưỡng chế; đạo đức hình thành tự phát trong xã hội, thực hiện tự giác, vi phạm thì chịu dư luận lên án. Nhiều quy tắc đạo đức được luật hoá nhưng không vì thế mà đồng nhất hai khái niệm.',
   },
   {
     id: 46,
@@ -551,6 +641,8 @@ export const QUESTIONS = [
       'Sự độc lập hoàn toàn giữa các cơ quan nhà nước.',
       'Sự cạnh tranh quyền lực giữa Quốc hội và Chính phủ.',
     ],
+    explain:
+      'Việt Nam không áp dụng tam quyền phân lập theo kiểu phân chia đối trọng. Quyền lực nhà nước là thống nhất, thuộc về Nhân dân, có sự phân công, phối hợp và kiểm soát giữa các cơ quan trong việc thực hiện ba quyền. Vì vậy phương án nói phân chia tuyệt đối hay độc lập hoàn toàn đều sai.',
   },
   {
     id: 47,
@@ -563,6 +655,8 @@ export const QUESTIONS = [
       'Nhà nước ra đời do quyết định của thần quyền.',
       'Nhà nước ra đời cùng lúc với ngôn ngữ loài người.',
     ],
+    explain:
+      'Chuỗi nhân quả: lực lượng sản xuất phát triển, có sản phẩm dư thừa, xuất hiện chế độ tư hữu, xã hội phân hoá giai cấp, mâu thuẫn không điều hoà được và nhà nước ra đời. Do đó tư hữu và giai cấp là điều kiện tiên quyết, không thể có nhà nước trước chúng.',
   },
   {
     id: 48,
@@ -575,6 +669,8 @@ export const QUESTIONS = [
       'Ý chí chủ quan của các bên trong quan hệ dân sự.',
       'Hợp đồng được giao kết giữa các bên.',
     ],
+    explain:
+      'Nghĩa vụ dân sự luôn hướng tới hành vi của bên có nghĩa vụ: phải làm một việc như giao hàng, trả tiền, hoặc không được làm một việc. Tài sản chỉ là thứ mà hành vi đó tác động tới, còn hợp đồng là căn cứ làm phát sinh nghĩa vụ, cả hai đều không phải đối tượng.',
   },
   {
     id: 49,
@@ -587,6 +683,8 @@ export const QUESTIONS = [
       'Cộng hòa liên bang.',
       'Cộng hòa tổng thống.',
     ],
+    explain:
+      'Chính thể trả lời câu hỏi quyền lực tối cao được lập ra bằng cách nào. Ở Việt Nam, Quốc hội do Nhân dân bầu ra theo nhiệm kỳ nên là chính thể cộng hòa, cụ thể là cộng hòa xã hội chủ nghĩa, không phải quân chủ truyền ngôi cũng không phải cộng hòa tổng thống.',
   },
   {
     id: 50,
@@ -600,6 +698,8 @@ export const QUESTIONS = [
       'Pháp luật là kiến trúc thượng tầng, chịu sự quyết định của cơ sở hạ tầng kinh tế.',
     ],
     note: 'Câu chọn nhận định SAI — đáp án đúng là phương án đầu tiên.',
+    explain:
+      'Sai vì pháp luật thuộc kiến trúc thượng tầng, do cơ sở hạ tầng kinh tế quyết định. Điều kiện kinh tế xã hội thay đổi thì pháp luật phải sửa đổi theo, ví dụ chuyển từ kinh tế kế hoạch hoá sang kinh tế thị trường kéo theo hàng loạt luật mới về doanh nghiệp, đầu tư.',
   },
   {
     id: 51,
@@ -612,6 +712,8 @@ export const QUESTIONS = [
       'Pháp luật không có vai trò trong quản lý nhà nước.',
       'Pháp luật chỉ điều chỉnh quan hệ giữa các cơ quan nhà nước.',
     ],
+    explain:
+      'Nhà nước quản lý xã hội chủ yếu bằng pháp luật vì pháp luật có tính bắt buộc chung và được bảo đảm thực hiện bằng cưỡng chế nhà nước. Nói pháp luật chỉ để trừng phạt là nhầm chức năng bảo vệ với toàn bộ vai trò của pháp luật.',
   },
   {
     id: 52,
@@ -624,6 +726,8 @@ export const QUESTIONS = [
       'Nhà nước sẽ mất đi ngay khi giai cấp thống trị thay đổi.',
       'Nhà nước là hiện tượng tồn tại từ khi loài người xuất hiện.',
     ],
+    explain:
+      'Nhà nước là phạm trù lịch sử gắn với xã hội có giai cấp: ra đời khi giai cấp xuất hiện và theo lý luận sẽ tiêu vong khi không còn giai cấp. Vì vậy không thể nói nhà nước tồn tại vĩnh viễn hay có từ khi loài người xuất hiện.',
   },
   {
     id: 53,
@@ -636,6 +740,8 @@ export const QUESTIONS = [
       'Pháp luật đứng trên nhà nước và không chịu sự chi phối của nhà nước.',
       'Pháp luật chỉ là công cụ của các tổ chức xã hội, không phải của nhà nước.',
     ],
+    explain:
+      'Pháp luật là phương tiện chứ không phải mục đích: nhà nước dùng nó để đạt mục tiêu quản lý, giữ trật tự và phát triển xã hội. Pháp luật cũng do nhà nước ban hành nên không thể đứng trên nhà nước.',
   },
   {
     id: 54,
@@ -649,6 +755,8 @@ export const QUESTIONS = [
       'Pháp luật vừa mang tính giai cấp vừa mang tính xã hội.',
     ],
     note: 'Câu chọn nhận định SAI — đáp án đúng là phương án đầu tiên.',
+    explain:
+      'Sai ở phạm vi. Pháp luật phủ khắp đời sống: kinh tế, dân sự, lao động, hôn nhân gia đình, hình sự, hành chính. Lĩnh vực chính trị chỉ là một phần trong số đó.',
   },
   {
     id: 55,
@@ -661,6 +769,8 @@ export const QUESTIONS = [
       'Pháp luật không phản ánh ý chí của bất kỳ giai cấp nào.',
       'Pháp luật chỉ phản ánh ý chí của các cơ quan lập pháp.',
     ],
+    explain:
+      'Đây chính là tính giai cấp của pháp luật. Cần hiểu đúng: pháp luật phản ánh ý chí giai cấp thống trị nhưng đồng thời vẫn phải tính đến lợi ích chung của xã hội, nếu không sẽ không được chấp nhận và không thể thực hiện được.',
   },
   {
     id: 56,
@@ -673,6 +783,8 @@ export const QUESTIONS = [
       'Nhà nước là tổ chức kinh tế do các doanh nghiệp thành lập.',
       'Nhà nước là tổ chức tôn giáo có quyền lực tối cao.',
     ],
+    explain:
+      'Định nghĩa nêu đủ ba dấu hiệu: là tổ chức quyền lực chính trị, mang tính đặc biệt vì có bộ máy cưỡng chế, quyền ban hành pháp luật và thu thuế, và mang bản chất giai cấp. Nhà nước không trung lập giữa các giai cấp.',
   },
   {
     id: 57,
@@ -685,6 +797,8 @@ export const QUESTIONS = [
       'Hiến pháp chỉ có giá trị áp dụng trong một số lĩnh vực nhất định.',
       'Hiến pháp có hiệu lực ngang với các nghị định của Chính phủ.',
     ],
+    explain:
+      'Hiến pháp do Quốc hội ban hành theo thủ tục đặc biệt, cần ít nhất 2/3 tổng số đại biểu tán thành, và quy định những vấn đề nền tảng nhất của quốc gia. Mọi văn bản khác kể cả luật đều phải phù hợp với Hiến pháp.',
   },
   {
     id: 58,
@@ -697,5 +811,7 @@ export const QUESTIONS = [
       'Là trình tự, thủ tục ban hành văn bản của cơ quan nhà nước.',
       'Là cơ cấu tổ chức của hệ thống cơ quan tư pháp.',
     ],
+    explain:
+      'Hình thức ở đây là cái vỏ chứa đựng ý chí giai cấp thống trị, tức ý chí đó được thể hiện ra ngoài dưới dạng nào để trở thành pháp luật, gồm tập quán pháp, tiền lệ pháp và văn bản quy phạm pháp luật. Đừng nhầm với nội dung pháp luật hay trình tự ban hành văn bản.',
   },
 ].map((q, i) => ({ ...q, number: i + 1, correctIndex: 0, aiGenerated: 'distractors-only' }))

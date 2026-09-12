@@ -190,6 +190,13 @@ export const IconBriefcase = (p) => (
   </Svg>
 )
 
+export const IconBulb = (p) => (
+  <Svg {...p}>
+    <path d="M9.5 18.5h5M10.5 21.5h3" />
+    <path d="M12 2.5a6 6 0 0 0-3.4 10.9c.6.5 1 1.2 1 2h4.8c0-.8.4-1.5 1-2A6 6 0 0 0 12 2.5Z" />
+  </Svg>
+)
+
 export const IconPrinter = (p) => (
   <Svg {...p}>
     <path d="M7 9V3.5h10V9M7 17.5H5.5A1.5 1.5 0 0 1 4 16v-4.5A2.5 2.5 0 0 1 6.5 9h11a2.5 2.5 0 0 1 2.5 2.5V16a1.5 1.5 0 0 1-1.5 1.5H17" />

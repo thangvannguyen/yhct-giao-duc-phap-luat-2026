@@ -5,6 +5,8 @@ import { useProgressStore } from '../context/ProgressContext'
 import { useDocumentTitle } from '../hooks/useDocumentTitle'
 import { formatDuration, gradeLabel, prepareQuestions } from '../utils/quiz'
 import OptionList from '../components/OptionList'
+import ExplainBox from '../components/ExplainBox'
+import Fireworks from '../components/Fireworks'
 import ProgressRing from '../components/ProgressRing'
 import TopicBadge from '../components/TopicBadge'
 import { Button, Card, NumberBadge, PageHeader, ProgressBar } from '../components/ui'
@@ -243,9 +245,12 @@ export default function ExamPage() {
     const pct = Math.round((score / exam.length) * 100)
     const grade = gradeLabel(pct)
     const wrong = exam.filter((q) => answers[q.id] === undefined || !q.choices[answers[q.id]].isCorrect)
+    const perfect = exam.length > 0 && score === exam.length
 
     return (
       <>
+        <Fireworks active={perfect} />
+
         <PageHeader title="Kết quả thi thử" />
 
         <Card className="animate-pop flex flex-col items-center gap-4 p-6 text-center">
@@ -296,6 +301,7 @@ export default function ExamPage() {
                 <p className="mb-3 text-[13.5px] leading-relaxed font-medium sm:text-[14.5px]">{q.question}</p>
                 <OptionList choices={q.choices} selected={picked ?? null} revealed size="sm" />
                 {q.note && <p className="mt-2 text-xs text-stone-500 dark:text-stone-400">{q.note}</p>}
+                <ExplainBox text={q.explain} className="mt-2.5" />
               </Card>
             )
           })}
